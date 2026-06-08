@@ -16,6 +16,6 @@
 - `../../../README.md`
 - `../../../AGENTS.md`
 - `../../BYWAY_SKILL_ONLY_DIRECTION.md`
-- `../../../skills/byway-family-travel-agent/SKILL.md`
+- `../../../skills/byway-family-travel-assistant/SKILL.md`
 
 如果归档内容与当前 Skill-only 主线冲突，以当前主线为准。
