@@ -119,6 +119,23 @@ Skill v1 通过标准：
 6. 标出 P0 失败和边界退化。
 7. 只根据重复出现的问题修改 Skill，不因为单个措辞问题堆规则。
 
+## 命令行冒烟
+
+修改 Skill 后，可先跑一条高信号用例：
+
+```bash
+hermes chat -Q --source tool --max-turns 6 \
+  -s byway-family-travel-assistant \
+  -q "灵隐寺今天几点关门？从西湖过去大概多久？适合放在同一天吗？"
+```
+
+通过信号：
+
+- 不触发 `Reached maximum iterations`。
+- 不在地图已有可用结果后继续网页搜索。
+- 按“地图显示/地图估算”说明事实来源。
+- 输出旅行决策建议，而不是只回答事实。
+
 ## 修改 Skill 后的判断
 
 一次修改算有效，必须同时满足：
